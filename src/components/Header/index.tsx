@@ -10,11 +10,11 @@ function Header() {
     const { theme } = useThemeContext()
 
     return (
-        <Navbar expand="lg" className="bg-body-tertiary" id="header" 
+        <Navbar expand="lg" className="bg-body-tertiary" id="header"
             data-bs-theme={theme}>
-            
+
             <Navbar.Brand>BrnCalisario</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <NavItem>
