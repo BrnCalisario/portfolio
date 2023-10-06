@@ -1,0 +1,17 @@
+#btn {
+    border: 0;
+    border-radius: 8px;
+
+    
+    &.dark {
+        color: var(--dark);
+        background-color: var(--white);
+        border: 1px solid var(--dark)
+    }
+
+    &.light {
+        color: var(--white);
+        background-color: var(--dark-bg);
+        border: 1px solid var(--white)
+    }
+}

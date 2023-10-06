@@ -6,10 +6,7 @@ import ProviderProps from "../models/ProviderProps"
 const ThemeProvider = ({ children } : ProviderProps) => {
     const [theme, setTheme] = useState<Theme>('light')
 
-    const isDark = (parameterTheme? : Theme) =>  {
-        let t = parameterTheme ? parameterTheme : theme
-        return t === 'dark'
-    }
+    const isDark = theme === 'dark'
 
     useEffect(() => {
         const prevTheme = sessionStorage.getItem('theme') as Theme
@@ -18,15 +15,18 @@ const ThemeProvider = ({ children } : ProviderProps) => {
             return
         
         setTheme(prevTheme)
+        document.getElementById('html')?.setAttribute('data-bs-theme', prevTheme)
         
     }, [])
 
     const toggleTheme = () => {
         
-        let tm = isDark(theme) ? 'light' : 'dark'
+        let tm = isDark ? 'light' : 'dark'
     
         sessionStorage.setItem('theme', tm)
         setTheme(tm as Theme)
+
+        document.getElementById('html')?.setAttribute('data-bs-theme', tm)
     }
 
     const value : ThemeData = {

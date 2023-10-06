@@ -1,3 +1,5 @@
+import "./style.scss"
+
 import { Button } from 'react-bootstrap'
 
 import { FaSun, FaRegMoon } from "react-icons/fa";
@@ -8,9 +10,9 @@ function ThemeToggle() {
     const  { theme, toggleTheme, isDark } = useThemeContext()
 
     return (
-        <Button variant={ isDark() ? 'light' : 'dark' } onClick={toggleTheme}>
-            { isDark() ? <FaSun /> : <FaRegMoon /> } 
-        </Button>
+        <button id="btn" className={ isDark ? 'light' : 'dark' } onClick={toggleTheme}>
+            { isDark ? <FaSun /> : <FaRegMoon /> } 
+        </button>
     )
 }
 
