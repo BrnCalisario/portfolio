@@ -1,20 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
+import './App.scss';
+
 import { Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header';
 import Home from './pages/Home';
-import { useThemeContext } from './contexts/ThemeContext';
+
 import { Container } from 'react-bootstrap';
 
 function App() {
-
-	const { theme } = useThemeContext();
-
 	return (
-		<div className="App">
+		<div className='App'>
 			<Header />
-			<Container>
+			<Container id='content'>
 				<Routes>
 					<Route path='/' element={<Home />} />
 				</Routes>
