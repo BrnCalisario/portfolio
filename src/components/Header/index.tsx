@@ -10,11 +10,10 @@ function Header() {
 
 	return (
 		<Navbar expand='lg' className='bg-body-tertiary' id='header'>
-			{/* <Navbar.Brand>BrnCalisario</Navbar.Brand> */}
 			<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 			<Navbar.Collapse id='basic-navbar-nav'>
 				<Nav className='me-auto'>
-					<NavItem>
+					{/* <NavItem>
 						<NavLink className='nav-link' to={''}>
 							Home
 						</NavLink>
@@ -23,7 +22,7 @@ function Header() {
 						<NavLink className='nav-link' to={''}>
 							Sobre mim
 						</NavLink>
-					</NavItem>
+					</NavItem> */}
 				</Nav>
 				<Nav>
 					<ThemeToggle />
