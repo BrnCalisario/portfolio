@@ -5,6 +5,13 @@ import { Nav } from 'react-bootstrap';
 function Home() {
 	return (
 		<div id='home'>
+			<div id='sidenav'>
+				<h4 className='selected'>Home</h4>
+				<h4>Sobre mim</h4>
+				<h4>Projetos</h4>
+				<h4>Contato</h4>
+			</div>
+
 			<div id='brand'>
 				<div className='wrap-links'>
 					<h1>BrnCalisario</h1>

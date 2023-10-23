@@ -24,9 +24,9 @@ function Header() {
 						</NavLink>
 					</NavItem> */}
 				</Nav>
-				<Nav>
+				{/* <Nav>
 					<ThemeToggle />
-				</Nav>
+				</Nav> */}
 			</Navbar.Collapse>
 		</Navbar>
 	);

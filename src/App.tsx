@@ -12,7 +12,7 @@ import { Container } from 'react-bootstrap';
 function App() {
 	return (
 		<div className='App'>
-			<Header />
+			{/* <Header /> */}
 			<Container id='content'>
 				<Routes>
 					<Route path='/' element={<Home />} />
