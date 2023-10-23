@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 import './App.scss';
+// import Header from './components/Header';
 
 import { Route, Routes } from 'react-router-dom';
 
-import Header from './components/Header';
 import Home from './pages/Home';
 
 import { Container } from 'react-bootstrap';

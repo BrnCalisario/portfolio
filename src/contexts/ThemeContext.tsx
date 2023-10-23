@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from "react"
-import ThemeData, { Theme } from "../models/ThemeData"
+import React, { useContext } from "react"
+import ThemeData from "../models/ThemeData"
 
 const ThemeContext = React.createContext<ThemeData | undefined>(undefined)
 
