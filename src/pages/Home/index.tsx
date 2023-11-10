@@ -2,11 +2,13 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './index.scss';
 import { Nav } from 'react-bootstrap';
 import About from '../About';
+import FloatingNavbar from '../../components/FloatingNavbar';
 
 function Home() {
 	return (
 		<>
 			<div id='home'>
+				<FloatingNavbar />
 				<div id='sidenav'>
 					<h4 className='selected'>Home</h4>
 					<h4>Sobre mim</h4>

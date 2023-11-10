@@ -1,0 +1,13 @@
+.floating-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	height: 100%;
+	width: 60%;
+
+	h3:hover {
+		color: #fa4646;
+		cursor: pointer;
+	}
+}
