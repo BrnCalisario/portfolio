@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import styled from "styled-components"
 import "./style.scss"
 
-
 interface FloatingNavProps {
     visible?: any,
 }
@@ -13,7 +12,9 @@ const FloatingNav = styled("div") <FloatingNavProps>`
     left: 0;
     width: 100%;
     height: 100px;  
-    border: 1px solid magenta;
+    border: 1px solid var(--red);
+    border-left: 0;
+    border-right: 0;
     opacity: ${(props: FloatingNavProps) => (props.visible ? '1' : '0')};
     transition: opacity 0.3s ease-in-out;
 `
