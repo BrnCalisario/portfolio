@@ -1,23 +1,26 @@
-import RedSpan from "../../components/RedSpan"
 import "./index.scss"
+import ProjectSlider, { ProjectInfo } from "../../components/Slider"
 
-const ProjectPreview = () => {
+
+export const ProjectsPage = () => {
+
+    const projects: ProjectInfo[] = [{
+        name: 'Plug-it'
+    }, {
+        name: 'Chatbot'
+    }, {
+        name: 'Tictactoe-ia'
+    }, {
+        name: 'Deep-Learning'
+    }]
+
     return (
-        <div className="w-64 h-64 border border-sky-500">
-            <h1></h1>
-        </div>
-    )
-}
-
-const ProjectsPage = () => {
-
-    return (
-        <>
-            <RedSpan><h1>Projetos</h1></RedSpan>
-            <div className="w-100 border border-red-700 p-4">
-                <ProjectPreview />
+        <div className="mb-5">
+            <h1 className="text-right underline">Projetos</h1>
+            <div className="w-100 border p-5">
+                <ProjectSlider items={projects} />
             </div>
-        </>
+        </div >
     )
 }
 
