@@ -3,6 +3,7 @@ import './index.scss';
 import { Nav } from 'react-bootstrap';
 import About from '../About';
 import FloatingNavbar from '../../components/FloatingNavbar';
+import ProjectsPage from '../Projects';
 
 function Home() {
 	return (
@@ -38,6 +39,7 @@ function Home() {
 				</div>
 			</div>
 			<About />
+			<ProjectsPage />
 		</>
 	);
 }
